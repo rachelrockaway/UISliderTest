@@ -9,16 +9,32 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    //Data Variables
+    
+    var testRange:Int = kDefaultTestRange {
+        didSet{
+            displayTestRange.text = "\(testRange)"
+        }
+    }
+    
+    
+    //Outlets
+    
+    @IBOutlet weak var displayTestRange: UILabel!
+    
+    //Actions
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        displayTestRange.text = "\(testRange)"
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+    @IBAction func testRangeChange(sender: UISlider) {
+        testRange = Int(sender.value)
     }
+    
 
 
 }
