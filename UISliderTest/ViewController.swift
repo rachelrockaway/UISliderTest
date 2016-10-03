@@ -29,13 +29,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         displayTestRange.text = "\(testRange)"
     }
-
-
+    
     @IBAction func testRangeChange(sender: UISlider) {
         testRange = Int(sender.value)
     }
-    
-
 
 }
 

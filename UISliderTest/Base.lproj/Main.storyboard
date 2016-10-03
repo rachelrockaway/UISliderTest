@@ -21,7 +21,7 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="150" minValue="0.0" maxValue="300" translatesAutoresizingMaskIntoConstraints="NO" id="d32-tb-scg">
                                 <rect key="frame" x="39" y="141" width="522" height="31"/>
                                 <connections>
-                                    <action selector="testRangeChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="BSw-j6-Y66"/>
+                                    <action selector="testRangeChange:" destination="BYZ-38-t0r" eventType="touchDragInside" id="Kyh-Ur-ZNk"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="150" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sgg-LB-jna">
